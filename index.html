@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Резюме</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 24px;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg); color: var(--text);
+    }
+    .page { max-width: 860px; margin: 0 auto; }
+    header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+    h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
+    .contacts { display: flex; flex-wrap: wrap; gap: 12px; font-size: 14px; color: var(--muted); align-items: center; }
+    .contacts a { color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+    .contacts a:hover { text-decoration: underline; }
+
+    main { display: grid; gap: 20px; }
+    section { border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+    section h2 { font-size: 18px; margin: 0 0 8px; }
+    p { margin: 6px 0; }
+
+    .edu-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    .edu-item { border-left: 3px solid var(--accent); padding-left: 10px; }
+    .edu-item .title { font-weight: 600; }
+    .edu-item .meta { color: var(--muted); font-size: 14px; }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { border: 1px solid var(--border); border-radius: 999px; padding: 6px 10px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Шакиров Тимур</h1>
+      <div class="contacts">
+        <span>Город: <strong>Санкт-Петербург</strong></span>
+        <span>•</span>
+        <a href="https://t.me/example" target="_blank" rel="noopener">
+          <i class="fa-brands fa-telegram"></i> @Craftic
+        </a>
+        <span>•</span>
+        <a href="https://github.com/example" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="summary">
+        <h2>Ключевой навык</h2>
+        <p>Могу закинуться и не откинуться после пяти шотов 🥃</p>
+      </section>
+
+      <section id="education">
+        <h2>Образование</h2>
+        <ul class="edu-list">
+          <li class="edu-item">
+            <div class="title">Казанский Федеральный Университет</div>
+            <div class="meta">Прикладная математика и информатика, Бакалавриат</div>
+          </li>
+          <li class="edu-item">
+            <div class="title">Высшая Школа экономики</div>
+            <div class="meta">Машинное обучение и анализ данных, Магистратура</div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Ключевые навыки</h2>
+        <div class="skills">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">SQL</span>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
